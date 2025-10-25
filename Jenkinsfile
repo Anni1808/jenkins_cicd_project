@@ -32,6 +32,13 @@ pipeline {
                 sh 'docker run -d -p 5000:5000 myapp:latest'
             }
         }
+
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Anni1808/jenkins_cicd_project.git'
+            }
+        }
+
     }
 
     post {
