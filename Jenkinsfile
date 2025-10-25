@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/jenkins_cicd_project.git'
+                git 'https://github.com/Anni1808/jenkins_cicd_project.git'
             }
         }
 
